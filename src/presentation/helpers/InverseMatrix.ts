@@ -27,7 +27,7 @@ export const inverseMatrix = ({ matrix, n }: inverseMatrixInterface): number[][]
   // Función para calcular el MCD
   const gcd = (a: number, b: number): number => (b === 0 ? Math.abs(a) : gcd(b, a % b));
 
-  // Función para calcular el inverso modular
+  // // Función para calcular el inverso modular
   // const modularInverse = (det: number, mod: number): number | null => {
   //   for (let x = 1; x < mod; x++) {
   //     if ((det * x) % mod === 1) return x;
@@ -60,7 +60,7 @@ export const inverseMatrix = ({ matrix, n }: inverseMatrixInterface): number[][]
   
 
   // Determinante de la matriz
-  const det = determinant(matrix);
+  const det = (determinant(matrix)%n + n) % n;
   console.log(det);
 
   // Validar si el determinante y `n` son coprimos
