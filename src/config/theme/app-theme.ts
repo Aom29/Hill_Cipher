@@ -46,11 +46,17 @@ export const styles = StyleSheet.create({
 
   // Propiedades del contenedor de la matriz
   matrixContainer: {
-    width: '80%',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    width: '100%',
+    flexDirection: 'column',
+    alignItems: 'center',
     borderRadius: 10,
     marginBottom: 20,
+  },
+
+  matrixRow: {
+    flexDirection: 'row', // Alinea los elementos en una sola fila
+    justifyContent: 'center',
+    marginBottom: 5, // Espacio entre filas
   },
 
   input: {
@@ -64,6 +70,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     color: colors.textPrimary,
     fontSize: 18,
+    paddingHorizontal: 10,
 
     // Efecto de sombra y elevación
     shadowColor: colors.blue,
@@ -81,12 +88,20 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     borderWidth: 2,
     borderColor: colors.textPrimary,
+    marginBottom: 10, // Espacio entre botones
   },
+  
 
   buttonText: {
     color: colors.textPrimary,
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center'
+  },
+  scrollContainer: {
+    paddingVertical: 50,
+    alignItems: 'center',
+    width: '100%', // Asegura que ocupe el ancho completo del contenedor
+    flexGrow: 1, // Permite expandirse si hay más contenido
   }
 })

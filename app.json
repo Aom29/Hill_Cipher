@@ -18,11 +18,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.aom29.Calculadora"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "entryPoint": "/src/App.tsx"
+    "entryPoint": "/src/App.tsx",
+    "extra": {
+      "eas": {
+        "projectId": "cafa8d00-8aa2-44c5-a671-cfdf42bf73b8"
+      }
+    }
   }
 }
